@@ -11,3 +11,9 @@ Maven --->
             <maven.compiler.target>20</maven.compiler.target>
   </properties>
 '''
+
+PageObjects -->
+
+vytvořit složku pages v test/Java, --> Mark Directory -->Test Sources Root (pouze zě nemám java kde vznikají package)
+
+Pak si v testu na importovat pages object např: import pages.HomePage; 

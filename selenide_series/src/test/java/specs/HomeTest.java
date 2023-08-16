@@ -1,11 +1,13 @@
 package specs;
 
+
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.WebDriverRunner;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
+import pages.HomePage;
 // pro každou novou funkci pomocí AlT + Enter můžeme přidat hvězdičku a ušetříme řádky
 import java.util.List;
 
@@ -15,13 +17,18 @@ import static org.testng.Assert.assertTrue;
 import static org.testng.AssertJUnit.assertEquals;
 
 public class HomeTest {
+   HomePage home = new HomePage();
     @Test
     public void testPageUrlAndTitle() {
-        open("https://practice.sdetunicorns.com/");
+        // home page z page objects
+        home
+                .open()   // můžeme i řetězit
+                        .assertUrl("https://practice.sdetunicorns.com/");
+
 
         // test očekávané url, String url do této proměné jsme vložily url
-        String url = WebDriverRunner.url();
-        assertEquals(url, "https://practice.sdetunicorns.com/");
+        // *page*
+       // home.assertUrl("https://practice.sdetunicorns.com/");
 
         // test titulu stránky
         String title = title();
@@ -32,8 +39,8 @@ public class HomeTest {
     public void testInteractingWithElements() {
          open("https://practice.sdetunicorns.com/");
 
-         // klikneme na tlačítko podle id
-        $(By.id("get-started")).click();
+         // klikneme na tlačítko podle id * page_object *
+        home.getStaredBtn().click();
 
         // zkontrolujeme očekávanou URL máme dva způsoby
         String url = WebDriverRunner.url();
@@ -41,11 +48,12 @@ public class HomeTest {
         assertTrue(url.contains("get-started"));
 
         // najdeme objeckt podle cssSelector a zkontrolujeme jeho text ( zde je to třída h1 class )
-        $("h1")
+        // *pages object
+        home.headingTitle()
                 .should(text("Think different. Make different."));
 
-        // Ověříme logo pomocí xpath
-        $(By.xpath("//*[@id=\"zak-masthead\"]/div/div/div/div[1]/div/a/img"))
+        // Ověříme logo pomocí xpath * pages*
+        home.logoLink()
                 .should(be(visible));
     }
 
@@ -58,7 +66,7 @@ public class HomeTest {
         // vytvoříme si pak proměnou linklists
         //za li[id. . .] už je id na položky v menu
         List<String> expectedLinks = List.of("Home", "About", "Shop", "Blog", "Contact", "My account");
-        ElementsCollection linkLists = $$("#zak-primary-menu li[id*=menu-item]");
+        ElementsCollection linkLists = home.linksList();
 
         // vypíšeme do console položky menu
         System.out.println(linkLists.texts());
