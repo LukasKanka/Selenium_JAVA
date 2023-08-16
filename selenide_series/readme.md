@@ -17,3 +17,8 @@ PageObjects -->
 vytvořit složku pages v test/Java, --> Mark Directory -->Test Sources Root (pouze zě nemám java kde vznikají package)
 
 Pak si v testu na importovat pages object např: import pages.HomePage; 
+
+
+Firefox browser --> https://www.youtube.com/watch?v=EYv8c-94MRA&list=PL6AdzyjjD5HC4NJuc083bzFq86JekmASF&index=9
+
+
