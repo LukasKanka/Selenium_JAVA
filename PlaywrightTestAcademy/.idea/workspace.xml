@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e313fd9a-aaf7-4ddf-8596-2ccbfcf66da1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Selenite_Naveen/driver/geckodriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Selenite_Naveen/src/test/java/cz/lukan/LaunchBrowser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cz/lukan/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cz/lukan/AppTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="e313fd9a-aaf7-4ddf-8596-2ccbfcf66da1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +30,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/lukas/Nextcloud/GitHub/Java/Selenium_Selenide_Playwright_JAVA/PlaywrightTestAcademy",
+    "last_opened_file_path": "C:/Users/lukas/Nextcloud/GitHub/Java/Selenium_Selenide_Playwright_JAVA/playwrightLukan",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1692287544970</updated>
       <workItem from="1692287547085" duration="2032000" />
-      <workItem from="1692637254673" duration="321000" />
+      <workItem from="1692637254673" duration="1910000" />
     </task>
     <servers />
   </component>
