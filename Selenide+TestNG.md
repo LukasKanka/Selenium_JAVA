@@ -1,20 +1,7 @@
-Založení projektu:
+Selenide + TestNG:
 
-Maven
+pom.xml:
 
-TestNG
-
-Selenide
-
-Na inportovat si:
-
-import static com.codeborne.selenide.Selenide.*;
-
-import static com.codeborne.selenide.Condition.*;
-
-@Test --> Nezapomenout --> Generata --> MethodTest (ušetří práci)
-
-pom.xml
 
 <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

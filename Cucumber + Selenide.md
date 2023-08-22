@@ -1,9 +1,9 @@
-**Základ pom.xml pro Cucumber + Selenide.**
+Cucumber + Selenide:
 
-Nezapomenout do IDE pluginy: Cucumber for Java a Cucumber +
+Instalovat pluginy do IDE Cucumber for Java a Cucumber +
 
-`
- <properties>
+Pom:
+<properties>
         <maven.compiler.source>20</maven.compiler.source>
         <maven.compiler.target>20</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -28,6 +28,10 @@ Nezapomenout do IDE pluginy: Cucumber for Java a Cucumber +
     <artifactId>selenide</artifactId>
     <version>6.17.1</version>
 </dependency>
-
 </dependencies>
-`
+</project>
+
+
+Tutorial: 
+
+https://www.youtube.com/watch?v=2Vu3wu93yuc&list=PLFGzDEkV3ACsFoqqB5dUu5CAfsZ0Kx2GW&index=1

@@ -15,10 +15,12 @@ public class LaunchBrowser {
     public void testBrowser() {
         // System.setProperty("webdriver.gecko.driver", "C:\\Users\\lukas\\Nextcloud\\GitHub\\Java\\Selenium_Selenide_Playwright_JAVA\\Selenite_Naveen\\driver\\geckodriver.exe");
         // Configuration.browser = "firefox";
+        //Configuration.startMaximized = tru;
+        Configuration.headless = true; // true nezobrazí browser
+        Configuration.baseUrl = "https://www.google.com/";
+        Configuration.screenshots = false;
 
-        Configuration.headless = true;
-
-        open("https://www.google.com/");
+        open("/");
         // Odmítnutí cookie
         $ (By.id("W0wltc")).click();
     }
