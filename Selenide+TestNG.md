@@ -1,16 +1,22 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+Založení projektu:
 
-  <groupId>cz.lukan</groupId>
-  <artifactId>Selenide_Naveen</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+Maven
 
-  <name>Selenite_Naveen</name>
-  <url>http://maven.apache.org</url>
+TestNG
 
-  <properties>
+Selenide
+
+Na inportovat si:
+
+import static com.codeborne.selenide.Selenide.*;
+
+import static com.codeborne.selenide.Condition.*;
+
+@Test --> Nezapomenout --> Generata --> MethodTest (ušetří práci)
+
+pom.xml
+
+<properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>20</maven.compiler.source>
     <maven.compiler.target>20</maven.compiler.target>

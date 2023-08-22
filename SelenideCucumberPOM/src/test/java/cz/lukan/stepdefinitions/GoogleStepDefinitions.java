@@ -1,5 +1,6 @@
 package cz.lukan.stepdefinitions;
 
+import com.codeborne.selenide.Configuration;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
@@ -11,7 +12,7 @@ public class GoogleStepDefinitions {
     public void i_navigate_to(String string) {
        // open("https://www.google.com");
         open(string);// going to URL
-        sleep(10000);// 10 sekund
+        sleep(3000);//  sekund
     }
     @Given("I wait for {int} seconds")
     public void i_wait_for_seconds(Integer int1) {
@@ -33,6 +34,7 @@ public void i_refresh_the_page() {
 }
 @Then("I hold the browser open")
 public void i_hold_the_browser_open() {
+    Configuration.holdBrowserOpen=false;
 
 
 }
